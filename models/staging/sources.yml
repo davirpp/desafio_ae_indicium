@@ -21,7 +21,7 @@ sources:
       
       - name: address
         columns:
-          - name: adressid
+          - name: addressid
             tests:
               - unique
               - not_null

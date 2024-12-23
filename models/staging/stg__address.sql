@@ -1,7 +1,7 @@
 with 
     stg_address as (
         select
-            cast(addressid as int) as pk_adress
+            cast(addressid as int) as pk_address
             , case
                 when addressline2 is null then addressline1
                 else concat(addressline1, ', ', addressline2)

@@ -8,4 +8,4 @@ with
     )
 
 select * 
-stg_sales_order_header_sales_reason
+from stg_sales_order_header_sales_reason

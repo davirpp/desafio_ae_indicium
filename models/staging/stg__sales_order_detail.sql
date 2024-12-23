@@ -1,7 +1,7 @@
 with
     stg_sales_order_detail as (
         select
-            cast(saledorderdetailid as int) as pk_salesorderdetail
+            cast(salesorderdetailid as int) as pk_salesorderdetail
             , cast(salesorderid as int) as fk_sales
             , cast(productid as int) as fk_product
             , cast(orderqty as int) as quantity
