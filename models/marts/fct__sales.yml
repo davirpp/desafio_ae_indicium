@@ -1,0 +1,70 @@
+version: 2
+
+models:
+  - name: fct__sales
+    description: Dimensão dos pedidos/vendas. Armazena todas as informações das vendas.
+    columns:
+
+      - name: pk_salesorderdetails
+        description: Chave primária da tabela de detalhes das vendas.
+        data_tests:
+          - unique
+          - not_null
+
+      - name: fk_sales
+        description: Chave estrangeira das vendas. 
+        data_tests:
+          - not_null
+
+      - name: fk_customer
+        description: Chave estrangeira dos clientes. 
+        data_tests:
+          - not_null 
+
+      - name: fk_address
+        description: Chave estrangeira dos endereços registrados. 
+        data_tests:
+          - not_null
+      
+      - name: fk_credit_card
+        description: Chave estrangeira dos cartões de crédito.
+        data_tests:
+          - not_null
+      
+      - name: fk_product
+        description: Chave estrangeira dos produtos.
+        data_tests:
+          - not_null
+
+      - name: order_date
+        description: Data que ocorreu a venda.
+        data_tests:
+          - not_null
+      
+      - name: order_status
+        description: Status em que o pedido se encontra
+        data_tests:
+          - not_null
+          - accepted_values:
+              values:
+                - Finished
+                - Pending
+      
+      - name: quantity
+        description: Quantidade de um determinado produto naquela venda.
+        data_tests:
+          - not_null
+      
+      - name: unit_price
+        description: Valor unitário de um determinado produto naquela venda.
+        data_tests:
+          - not_null
+
+      - name: unit_price_discount
+        description: Percentual de desconto no valor unitário de um determinado produto naquela venda.
+        data_tests:
+          - not_null
+
+        
+              
+        

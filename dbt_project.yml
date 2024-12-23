@@ -37,11 +37,10 @@ models:
       +materialized: view
       +schema: staging
 
-    comercial:
-      intermediate:
-        +materialized: view
-        +schema: intermediate
-      
-      marts:
-        +materialized: table
-        +schema: marts
+    intermediate:
+      +materialized: view
+      +schema: intermediate
+    
+    marts:
+      +materialized: table
+      +schema: marts
