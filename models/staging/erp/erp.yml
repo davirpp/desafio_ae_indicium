@@ -1,8 +1,0 @@
-version: 2
-
-sources:
-  - name: erp_adventureworks
-    database: FEA24_9
-    schema: raw_adventure_works
-    tables:
-      - name: 

@@ -36,12 +36,12 @@ models:
     staging:
       +materialized: view
       +schema: staging
-      erp
 
     comercial:
-      +materialized: table
       intermediate:
+        +materialized: view
         +schema: intermediate
       
       marts:
+        +materialized: table
         +schema: marts
