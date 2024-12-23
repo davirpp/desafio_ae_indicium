@@ -5,7 +5,7 @@ with
             , cast(name as string) as product_name
             , cast(productnumber as string) as product_number
             , cast(safetystocklevel as int) as stock_level
-            , cast(listprice as float) as list_price
+            , cast(listprice as numeric(18, 4)) as list_price
         from {{ source('raw_adventureworks', 'product') }}
     )
 

@@ -8,7 +8,6 @@ with
             end as full_address
             , cast(city as string) as city
             , cast(stateprovinceid as int) as fk_stateprovince
-            -- Postal code can't be int, because some cases it has letters
             , cast(postalcode as string) as postal_code
         from {{ source('raw_adventureworks', 'address') }}
 
