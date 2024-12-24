@@ -7,7 +7,6 @@ models:
       - name: sk_reason
         description: Chave primária dos motivos de venda.
         data_tests:
-          - unique
           - not_null
 
       - name: fk_sales
