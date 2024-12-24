@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: dim__sales_reason
+    description: Dimensão de mnotivos de venda.
+    columns:
+      - name: sk_reason
+        description: Chave primária dos motivos de venda.
+        data_tests:
+          - unique
+          - not_null
+
+      - name: fk_sales
+        description: Chave estrangeira da venda.
+        data_tests:
+          - not_null
+        
+      - name: reason_name
+        description: Nome do motivo da venda.
+        data_tests:
+          - not_null
+
+      - name: reason_type
+        description: Tipo de motivo da venda
+        data_tests:
+          - not_null
+      
+              
+          

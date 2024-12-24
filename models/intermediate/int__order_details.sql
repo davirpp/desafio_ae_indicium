@@ -17,7 +17,7 @@ with
     )
     , int_order_details as (
         select
-            order_details.pk_salesorderdetail
+            order_details.pk_salesorderdetail as fk_salesorderdetail
             , order_details.fk_sales
             , order_header.fk_customer
             , order_header.fk_address

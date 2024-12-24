@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: dim__address
+    description: Dimensão de endereços. Armazena informações dos endereços dos clientes e lojas.
+    columns:
+      - name: pk_address
+        description: Chave primária dos endereços.
+        data_tests:
+          - unique
+          - not_null
+      
+      - name: full_address
+        description: O endereço completo.
+        data_tests:
+          - not_null
+
+      - name: city
+        description: Cidade do endereço.
+        data_tests:
+          - not_null
+
+      - name: stateprovince_name
+        description: Estado do endereço
+        data_tests:
+          - not_null
+      
+      - name: stateprovince_code
+        description: Código do estado
+        
+
+      - name: country_name
+        description: País do endereço
+        data_tests:
+          - not_null
+
+      - name: contry_code
+        description: Código do país
+
+      - name: postal_code
+        description: Código postal do endereço
+            
+      

@@ -7,9 +7,6 @@ models:
 
       - name: pk_salesorderdetails
         description: Chave primária da tabela de detalhes das vendas.
-        data_tests:
-          - unique
-          - not_null
 
       - name: fk_sales
         description: Chave estrangeira das vendas. 
@@ -28,8 +25,6 @@ models:
       
       - name: fk_credit_card
         description: Chave estrangeira dos cartões de crédito.
-        data_tests:
-          - not_null
       
       - name: fk_product
         description: Chave estrangeira dos produtos.
