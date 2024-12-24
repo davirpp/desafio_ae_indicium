@@ -7,10 +7,6 @@ with
         select *
         from {{ ref('stg__sales_order_header') }}
     )
-    , order_header_reason as (
-        select * 
-        from {{ ref('stg__sales_order_header_sales_reason') }}
-    )
     , products as (
         select * 
         from {{ ref('stg__products') }}
