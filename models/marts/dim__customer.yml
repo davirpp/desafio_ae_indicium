@@ -11,7 +11,7 @@ models:
           - not_null
 
       - name: fk_person
-        description: Chave estrangeira da pessoa .
+        description: Chave estrangeira da pessoa.
 
       - name: fk_store
         description: Chave estrangeira da loja.
