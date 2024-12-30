@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: dim__product
+    description: Dimensão dos produtos. Armazena informações dos produtos.
+    columns:
+      - name: pk_product
+        description: Chave primária dos produtos.
+        data_tests:
+          - unique
+          - not_null
+
+      - name: product_name
+        description: Nome do produto.
+        data_tests:
+          - not_null
+        
+      - name: product_number
+        description: Código de cadastro do produto.
+        data_tests:
+          - not_null
+
+      - name: stock_level
+        description: Quantidade de determinado produto no estoque.
+        data_tests:
+          - not_null
+      
+      - name: list_price
+        description: Valor de venda do produto.
+        data_tests:
+          - not_null
+          
+              
+          

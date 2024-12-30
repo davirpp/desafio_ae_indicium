@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: dim__customer
+    description: Dimensão de clientes. Armazena informações dos clientes.
+    columns:
+      - name: pk_customer
+        description: Chave primária de clientes.
+        data_tests:
+          - unique
+          - not_null
+
+      - name: fk_person
+        description: Chave estrangeira da pessoa.
+
+      - name: fk_store
+        description: Chave estrangeira da loja.
+
+      - name: customer_name
+        description: Nome do cliente.
+        data_tests:
+          - not_null
+
+      - name: customer_type
+        description: Tipo do cliente. (Person/Store)
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: 
+                - Person
+                - Store         

@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: dim__credit_card
+    description: Dimensão de cartão de crédito. Armazena informações de cartão de crédito úteis para o projeto.
+    columns:
+      - name: pk_credit_card
+        description: Chave primária de cartões de crédito.
+        data_tests:
+          - unique
+          - not_null
+      - name: card_type
+        description: Tipo do cartão de crédito.
